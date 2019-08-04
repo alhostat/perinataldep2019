@@ -1,0 +1,31 @@
+author,type,year,measure,d,vd
+Austin et al.,Depression,2008,Depression,0.015207101,0.035468674
+Austin et al.,Anxiety,2008,Anxiety,0.033844169,0.035236243
+Bevan et al.,Depression,2013,EPDS,-4.898979486,7.982704298
+Bevan et al.,Anxiety,2013,HADS-Anxiety,-2.963882589,2.013024831
+Chabrol et al.,Depression,2002,EPDS,-2.366401473,0.147220722
+Cho et al.,Depression,2008,Depression - BDI,-0.667318907,0.193454118
+Di Blasio et al.,Depression,2015,Total Depression (BDI),-0.471009918,0.023360465
+Dunn et al.,Depression,2012,Edinburgh Postnatal Depression Scale (EPDS),-0.854889159,0.952682298
+Goodman et al.,Anxiety,2014,BAI,-1.5,0.088095336
+Goodman et al.,Worry,2014,PSWQ,-2,0.175395979
+Goodman et al.,Depression,2014,BDI-II,-2.256304299,0.203282469
+Guardino et al.,Anxiety,2014,STAI,0.230134112,0.08570835
+Guardino et al.,Anxiety,2014,PSS,0.220776997,0.085663465
+Green et al.,Anxiety,2015,Penn State Worry Questionnaire,-1.166773696,0.314237536
+Green et al.,Depression,2015,Edinburgh Postnatal Depression Scale,-1.27249631,0.145308794
+Krusche et al.,Depression,2018,EPDS,-0.806946585,0.069976509
+Krusche et al.,Anxiety,2018,GAD-7,-0.239,0.0659
+Luberto et al.,Anxiety,2018,Anxiety BAI? Confirm….,-0.673762053,0.09645321
+Luberto et al.,Depression,2018,Depression BDI? Confirm….,-2.974163532,0.034026686
+Luberto et al.,Worry,2018,Worry PSWQ? Confirm…,-1.360439859,0.067353003
+Pisson et al.,Depression,2013,PSQ-9,0,0.138095238
+Pisson et al.,Anxiety,2013,TST,0.133572922,0.133630695
+Vieten et al.,Worry,2008,Perceived stress,-0.39,0.134931858
+Vieten et al.,Anxiety,2008,State anxiety,-0.85,0.144131858
+Vieten et al.,Depression,2008,Depression,-0.8,0.142801213
+Woolhouse et al.,Depression,2014,DASS Depression,0.07855346,0.177057221
+Woolhouse et al.,Anxiety,2014,STAI state anxiety,0.10220746,0.177150172
+Woolhouse et al.,Worry,2014,PSS stress,-0.143577185,0.177371216
+Zhang et al.,Depression,2015,Beck Depression Inventory — II,0.23341515,0.122149024
+Zhang et al.,Anxiety,2015,Perceived Stress Scale,0.099015625,0.121472076
