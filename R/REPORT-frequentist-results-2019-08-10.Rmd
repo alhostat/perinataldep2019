@@ -1,0 +1,43 @@
+---
+title: "Meta-Analysis"
+subtitle: "Frequentist Random Effects Results"
+author: "Alan Ho"
+
+abstract: Using Bayesian hierarchical (random effects) models for the meta-analysis with various priors for the heterogeneity parameter $\tau$, it was found that there was a significant treatment effect for depressive          symptoms (mean = 0.97, 95% CI ), anxiety (), and worry symptoms. However, there was substantial heterogeneity present specifically in the depressive symptoms subgroup where $tau$ was estimated to be between 0.58-1.12 where $\tau$ > 0.5 is considered substantial. In short, as with the frequentist meta-analysis results, the treatments did appear to have an effect but there is much uncertainty surrounding the treatment effect size though the 95% credible interval suggests that this effect might be at least what Cohen would indicate as medium (e.g. 0.39-0.41 found for Bayesian and Frequentist results), In terms of estimate shrinkage, there is Bevan et al. is most affected where their reweighted effect size is more than halved. 
+
+
+
+output: pdf_document
+header-includes:
+    \usepackage{fancyhdr}
+    \usepackage{float} 
+    \usepackage{morefloats} 
+    \floatplacement{figure}{h}
+    \maxdeadcycles=200
+    \usepackage{makeidx}
+---
+
+\newpage
+
+\tableofcontents
+
+\listoffigures
+\listoftables
+
+\newpage 
+
+\addtolength{\headheight}{1.0cm} 
+\pagestyle{fancyplain}
+\rhead{\includegraphics[height=1.2cm]{C:/Users/uqaho4/Desktop/qbi_newcastle_logo.png}} 
+\renewcommand{\headrulewidth}{0pt}
+
+
+```{r}
+# setwd('..')
+print(getwd())
+
+dir(getwd())
+dir(file.path(getwd(), 'R'))
+source('frequentist.R')
+```
+

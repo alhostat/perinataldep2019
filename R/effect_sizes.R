@@ -236,9 +236,6 @@ luberto = readxl::read_excel('extraction.xlsx', sheet = 'Luberto') %>%
 
 # Milgrom ---------------------------------------------------------
 
-
-
-
 # Pisson et al. ------------------------------------------------------------
 pisson = readxl::read_excel('extraction.xlsx', sheet = 'Pisson')%>% 
   group_by(Author, Measure, Time, r) %>% 

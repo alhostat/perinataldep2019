@@ -1,0 +1,140 @@
+---
+title: "Meta-Analysis"
+subtitle: "Frequentist Random Effects Results"
+author: "Alan Ho"
+
+abstract: Using Bayesian hierarchical (random effects) models for the meta-analysis with various priors for the heterogeneity parameter $\tau$, it was found that there was a significant treatment effect for depressive          symptoms (mean = 0.97, 95% CI ), anxiety (), and worry symptoms. However, there was substantial heterogeneity present specifically in the depressive symptoms subgroup where $tau$ was estimated to be between 0.58-1.12 where $\tau$ > 0.5 is considered substantial. In short, as with the frequentist meta-analysis results, the treatments did appear to have an effect but there is much uncertainty surrounding the treatment effect size though the 95% credible interval suggests that this effect might be at least what Cohen would indicate as medium (e.g. 0.39-0.41 found for Bayesian and Frequentist results), In terms of estimate shrinkage, there is Bevan et al. is most affected where their reweighted effect size is more than halved. 
+
+
+
+output: pdf_document
+header-includes:
+    \usepackage{fancyhdr}
+    \usepackage{float} 
+    \usepackage{morefloats} 
+    \floatplacement{figure}{h}
+    \maxdeadcycles=200
+    \usepackage{makeidx}
+---
+
+\newpage
+
+\tableofcontents
+
+\listoffigures
+\listoftables
+
+\newpage 
+
+\addtolength{\headheight}{1.0cm} 
+\pagestyle{fancyplain}
+\rhead{\includegraphics[height=1.2cm]{C:/Users/uqaho4/Desktop/qbi_newcastle_logo.png}} 
+\renewcommand{\headrulewidth}{0pt}
+
+
+```{r, include=F}
+setwd('..')
+source('init.R')
+
+knitr::opts_chunk$set(fig.pos = 'H')
+```
+
+# Statistical Analysis
+
+
+
+
+
+# Results
+
+```{r, echo=F, fig.cap='Treatment effects on Depressive/Anxious/Worry symptoms - Forest Plot', fig.height=4}
+generate_forestplot(meta_results, perinatal_data)
+```
+
+\newpage
+
+```{r, echo = F, message=F, warning=F}
+knitr::kable(
+  subgroup_analysis, 
+  caption = 'Subgroup Analysis'
+)
+
+```
+
+
+\newpage
+
+
+## Depression
+
+```{r, echo=F, fig.cap='Treatment effects on Depression - Forest Plot', fig.height=6}
+generate_forestplot(meta_results, depression)
+```
+
+\newpage
+
+## Anxiety 
+
+```{r, echo=F, fig.cap='Treatment effects on Anxiety - Forest Plot', fig.height=6}
+generate_forestplot(meta_results, anxiety)
+```
+
+\newpage
+
+## Worry / Stress
+
+```{r, echo=F, fig.cap='Treatment effects on Worry - Forest Plot', fig.height=6}
+generate_forestplot(meta_results, worry)
+```
+
+\newpage
+
+
+## Diagnostics
+
+
+\newpage
+
+1. Funnel Plots
+
+
+```{r, echo = F, fig.cap = 'Funnel Plot (overall)'}
+funnel(diagnostics(perinatal_data)$trim)
+```
+
+```{r, echo = F, fig.cap = 'Funnel Plot (Depression)'}
+funnel(diagnostics(depression)$trim)
+```
+
+```{r, echo = F, fig.cap = 'Funnel Plot (Anxiety)'}
+funnel(diagnostics(anxiety)$trim)
+```
+
+```{r, echo = F, fig.cap = 'Funnel Plot (Worry)'}
+funnel(diagnostics(worry)$trim)
+```
+
+2. Normality Plots
+
+
+3. Trim and fill 
+
+```{r, echo = F}
+knitr::kable(
+  trim_fill.results,
+  caption = "Trim and Fill Results"
+)
+```
+
+
+
+4. Permutation and bootstrapping
+
+
+# Conclusion
+
+
+
+
+
+
